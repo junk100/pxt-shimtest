@@ -1,0 +1,29 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables></variables>
+  <block type="pxt-on-start" x="70" y="70">
+    <statement name="HANDLER">
+      <block type="gameSplash">
+        <mutation _expanded="0" _input_init="false"></mutation>
+        <value name="title">
+          <shadow type="text" id="l/6#-8?b5MO`*uS9CnZ3">
+            <field name="TEXT"></field>
+          </shadow>
+          <block type="text_join">
+            <mutation items="2"></mutation>
+            <value name="ADD0">
+              <shadow type="text">
+                <field name="TEXT"></field>
+              </shadow>
+            </value>
+            <value name="ADD1">
+              <shadow type="text" id="#qIjqj3{WluRL9li?ef!">
+                <field name="TEXT">World</field>
+              </shadow>
+              <block type="foo_foo"></block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+</xml>
