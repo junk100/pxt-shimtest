@@ -1,6 +1,6 @@
 #include "pxt.h"
 
-namespace cppfoo {
+namespace foo {
         /**
         * Does an foo
         **/
