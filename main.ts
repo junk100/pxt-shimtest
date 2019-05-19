@@ -1,1 +1,0 @@
-let poop = foo.foo()

@@ -3,14 +3,13 @@
     "version": "0.0.0",
     "description": "",
     "dependencies": {
-        "device": "*"
+        "hw---stm32f401": "*"
     },
     "files": [
+        "implementation.cpp",
+        "extension.ts",
         "README.md",
-        "main.ts",
-        "main.blocks",
-        "extension.cpp",
-        "extension.ts"
+        "main.ts"
     ],
     "testFiles": [
         "test.ts"
