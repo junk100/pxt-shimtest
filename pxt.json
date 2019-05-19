@@ -10,7 +10,7 @@
         "extension.ts",
         "README.md",
         "main.ts",
-	"enums.d.ts"
+        "enums.d.ts"
     ],
     "testFiles": [
         "test.ts"
