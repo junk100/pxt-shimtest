@@ -10,9 +10,7 @@
         "main.ts",
         "main.blocks",
         "extension.cpp",
-        "extension.ts",
-        "shims.d.ts",
-        "enums.d.ts"
+        "extension.ts"
     ],
     "testFiles": [
         "test.ts"
