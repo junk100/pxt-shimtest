@@ -1,10 +1,9 @@
 #include "pxt.h"
 
-namespace cppfoo {
+namespace foo {
         /**
         * Does an foo
         **/
-	//%
 	int foo() {
 		return 1;
 	}
