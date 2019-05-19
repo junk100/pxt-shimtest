@@ -1,5 +1,5 @@
-namespace foo {
-    function foo(): number {
-        return 2
-    }
+namespace pxsim.foo {
+	function foo(): number {
+		return 2
+	}
 }
