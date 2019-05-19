@@ -6,11 +6,10 @@
         "device": "*"
     },
     "files": [
-        "implementation.cpp",
+        "extension.cpp",
         "extension.ts",
         "README.md",
-        "main.ts",
-        "enums.d.ts"
+        "main.ts"
     ],
     "testFiles": [
         "test.ts"
