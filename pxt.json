@@ -7,11 +7,16 @@
     },
     "files": [
         "README.md",
-        "main.ts"
+        "main.ts",
+        "main.blocks",
+        "extension.cpp",
+        "extension.ts",
+        "shims.d.ts",
+        "enums.d.ts"
     ],
     "testFiles": [
         "test.ts"
     ],
-    "public": false,
-    "preferredEditor": "tsprj"
+    "preferredEditor": "tsprj",
+    "public": false
 }
