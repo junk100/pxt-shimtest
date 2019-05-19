@@ -3,7 +3,6 @@
     "version": "0.0.0",
     "description": "",
     "dependencies": {
-        "hw---stm32f401": "*"
     },
     "files": [
         "implementation.cpp",
@@ -15,5 +14,6 @@
         "test.ts"
     ],
     "public": false,
-    "preferredEditor": "tsprj"
+    "preferredEditor": "tsprj",
+    "installedVersion": "workspace:ada34099-ac78-44c6-0e0b-20f2cf87fb4e"
 }
