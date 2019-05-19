@@ -1,5 +1,5 @@
 namespace foo {
-	export function foo(): number {
+	function foo(): number {
 		return 2
 	}
 }

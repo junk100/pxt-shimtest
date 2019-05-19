@@ -12,7 +12,8 @@
         "extension.cpp",
         "extension.ts",
         "shims.d.ts",
-        "enums.d.ts"
+        "enums.d.ts",
+	"sim/extension.ts"
     ],
     "testFiles": [
         "test.ts"
