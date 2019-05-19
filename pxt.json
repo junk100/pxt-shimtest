@@ -13,7 +13,7 @@
         "extension.ts",
         "shims.d.ts",
         "enums.d.ts",
-	"sim/extension.ts"
+        "sim/extension.ts"
     ],
     "testFiles": [
         "test.ts"

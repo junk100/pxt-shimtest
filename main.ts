@@ -1,1 +1,1 @@
-game.splash("" + foo.foo())
+let poop = foo.foo()
