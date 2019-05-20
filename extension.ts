@@ -59,9 +59,9 @@ namespace fpumath {
 }
 
 namespace fpuhelper {
-	//% shim fpuhelper::add
+	//% shim=fpuhelper::add
 	export function add(lhs: Buffer, rhs: Buffer): void {
-		//not implemented
+
 	}
 }
 
