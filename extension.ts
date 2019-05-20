@@ -1,4 +1,5 @@
 interface Float {
+	get(): number;
 	addToSelf(other: Float): void;
 }
 
@@ -7,6 +8,10 @@ class FpuFloat implements Float {
 	constructor(val: number) {
 		this._ = pins.createBuffer(4)
 		this._.writeFloatLE(val, 0)
+	}
+
+	get(): number {
+		return this._.readFloatLE(0)
 	}
 	
 	addToSelf(other: FpuFloat): void {
@@ -18,6 +23,10 @@ class SoftwareFloat implements Float {
 	_: number
 	constructor(val: number) {
 		this._ = val
+	}
+
+	get(): number {
+		return this._
 	}
 
 	addToSelf(other: SoftwareFloat): void {
