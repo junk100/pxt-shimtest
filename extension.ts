@@ -7,11 +7,11 @@ class FpuFloat implements Float {
 	_: Buffer
 	constructor(val: number) {
 		this._ = pins.createBuffer(4)
-		this._.writeFloatLE(val, 0)
+		this._.setNumber(NumberFormat.Float32LE, 0, val)
 	}
 
 	get(): number {
-		return this._.readFloatLE(0)
+		return this._.getNumber(NumberFormat.Float32LE, 0)
 	}
 	
 	addToSelf(other: FpuFloat): void {
