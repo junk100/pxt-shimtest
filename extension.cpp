@@ -1,6 +1,8 @@
 #include "pxt.h"
 using namespace pxt;
 
+#define FLOAT(buf) (*((float*)buf->data))
+
 namespace fpu {
 	//%
 	bool available() {
@@ -11,6 +13,6 @@ namespace fpu {
 namespace fpuhelper {
 	//%
 	void add(Buffer lhs, Buffer rhs) {
-		(float)(lhs->data) = (float)(lhs->data) + (float)(rhs->data);
+		FLOAT(lhs) = FLOAT(lhs) + FLOAT(rhs);
 	}
 }
