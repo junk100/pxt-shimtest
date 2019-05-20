@@ -8,3 +8,5 @@ deploy:
 
 test:
 	pxt test
+
+	# "hw---stm32f401": "*",
