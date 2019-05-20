@@ -9,18 +9,15 @@ namespace fpu {
 }
 
 namespace fpuhelper {
-	__attribute__((always_inline))
-	inline float add(float lhs, float rhs) {
-		return lhs + rhs;
-	}
-
-	__attribute__((always_inline))
-	inline void add(void *lhs, void *rhs) {
-		*(float*)lhs = add(*(float*)lhs, *(float*)rhs);
-	}
-
 	//%
 	void add(Buffer lhs, Buffer rhs) {
-		add((void*)lhs->data, (void*)rhs->data);
+		__asm__ __volatile__ (
+			"vldr	s15, [%0, 8];"
+			"vldr	s14, [%1, 8];"
+			"vadd.f32 s15, s15, s14;"
+			"vstr	s15, [%0, 8];"
+			: "+r" (lhs)
+			: "r" (rhs) 
+		);
 	}
 }
