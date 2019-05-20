@@ -4,11 +4,10 @@ interface Float {
 
 class FpuFloat implements Float {
 	_: Buffer
-	constructor() {
+	constructor(val: number) {
 		this._ = pins.createBuffer(4)
-		this._.fill(0)
+		this._.writeFloatLE(val, 0)
 	}
-
 	
 	addToSelf(other: FpuFloat): void {
 		fpuhelper.add(this._, other._)
@@ -17,12 +16,12 @@ class FpuFloat implements Float {
 
 class SoftwareFloat implements Float {
 	_: number
-	constructor() {
-		this._ = 0
+	constructor(val: number) {
+		this._ = val
 	}
 
 	addToSelf(other: SoftwareFloat): void {
-		this._ += other._
+		this._ += other._ + 242
 	}
 }
 
@@ -35,11 +34,11 @@ namespace fpu {
     	}
 
 	//% blockId=fpu_createFloat block="createFloat"
-	export function createFloat(): Float {
+	export function createFloat(val: number): Float {
 		if (fpu.available()) {
-			return new FpuFloat()
+			return new FpuFloat(val)
 		} else {
-			return new SoftwareFloat()
+			return new SoftwareFloat(val)
 		}
 	}
 }
