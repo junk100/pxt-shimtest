@@ -3,7 +3,7 @@
     "version": "0.0.0",
     "description": "",
     "dependencies": {
-        "core": "*"
+        "device": "*"
     },
     "files": [
         "extension.cpp",
