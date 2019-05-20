@@ -3,7 +3,7 @@
     "version": "0.0.0",
     "description": "",
     "dependencies": {
-        "hw---samd51": "*"
+        "hw---stm32f401": "*"
     },
     "files": [
         "extension.cpp",
