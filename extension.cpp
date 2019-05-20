@@ -1,9 +1,8 @@
 #include "pxt.h"
+using namespace pxt;
 
 namespace foo {
-        /**
-        * Does an foo
-        **/
+	//%
 	int foo() {
 		return 1;
 	}
